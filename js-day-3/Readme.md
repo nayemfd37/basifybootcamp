@@ -1,76 +1,52 @@
-## Operators & Expressions
+## Control Flow: If-else & Switch Statement
 
-### Arithmetic operators
+## The if Statement
 
 ```
-Operator	Description
-+	Addition
--	Subtraction
-*	Multiplication
-**	Exponentiation (ES2016)
-/	Division
-%	Modulus (Remainder)
-++	Increment
---	Decrement
+if (hour < 18) {
+  greeting = "Good day";
+}
 
 ```
 
-### Assignment Operator
+## The else Statement
 
 ```
-Operator	
-=	
-+=	
--=	
-*=	
-/=	
-%=	
-**=	
-
-```
-
-### comparison Operator
-
-```
-Operator	Description	
-==	equal to		
-===	equal value and equal type		
-!==	not equal value or not equal type	
->	greater than	
-<	less than	
->=	greater than or equal to	
-<=	less than or equal 
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
 
 ```
 
 
-### Logical Operators
+## The JavaScript Switch Statement
 
 ```
-Operator	Description	
-&&	and	
-||	or	
-!	not
-
-```
-
-### Conditional (Ternary) Operator
-
-```
-
-variablename = (condition) ? value1:value2 
-
-Example : 
-
-let voteable = (age < 18) ? "Too young":"Old enough";
-
-```
-
-
-### Operator Precedence
-
-```
-As in traditional mathematics, multiplication is done first: 
-let x = 100 + 50 * 3;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
 
 ```
